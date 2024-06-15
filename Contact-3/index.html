@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | HloMail</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to bottom, #ffffff, #d8a0f7);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .content {
+            flex: 1 0 auto;
+        }
+        .contact-form {
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-bottom: 5px solid #AE00FF;
+            border-right: 5px solid #AE00FF;
+        }
+        .contact-form h1 {
+            font-size: 50px;
+            color: #AE00FF;
+        }
+        .contact-form h2 {
+            font-size: 20px;
+            color: black;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            background-color: #F8EFFF;
+            font-size: 15px;
+            font-weight: 600;
+            border: none;
+            border-bottom: 3px solid #ac74ca;
+            border-radius: 0;
+        }
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            background-color: #F8EFFF;
+            box-shadow: none;
+            border-color: #ac74ca;
+        }
+        .contact-form input::placeholder,
+        .contact-form textarea::placeholder {
+            opacity: 0.5;
+        }
+        .contact-form button {
+            background-color: #AE00FF;
+            font-size: 18px;
+            font-weight: 600;
+            border: none;
+        }
+        .contact-form button:hover,
+        .contact-form button:focus {
+            background-color: #9500DB;
+        }
+        .footer {
+            padding: 20px 0;
+            padding-bottom: 50px;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="content d-flex align-items-center justify-content-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-8 col-sm-10">
+                    <div class="contact-form p-4 mb-4">
+                        <h1 class="text-center mb-3">Contact Us!</h1>
+                        <h2 class="text-center mb-4">We are at your service</h2>
+                        <form>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" name="name" placeholder="Name" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" name="email" placeholder="Email" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" name="number" placeholder="Phone Number">
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" name="message" placeholder="Your Message..." rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer text-white text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p class="text-dark mb-0">
+                        Created By
+                        <a href="https://nexrof.in" class="text-dark" target="_blank" rel="noopener noreferrer">HloMail</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS (optional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
