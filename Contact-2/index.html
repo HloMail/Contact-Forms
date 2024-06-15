@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | HloMail</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Body styles */
+        body {
+            background-color: #00B569;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Contact form styles */
+        .contact-form {
+            background-color: white;
+            padding: 40px;
+            border-radius: 25px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+            margin: auto;
+        }
+
+        .contact-form h1 {
+            font-size: 50px;
+            text-align: center;
+            color: #00AE65;
+        }
+
+        .contact-form .form-control {
+            border-radius: 15px;
+            margin-top: 10px;
+            font-size: 15px;
+            font-weight: 600;
+            border-bottom: 5px solid #2ecc71;
+        }
+
+        .contact-form .form-control::placeholder {
+            opacity: 0.5;
+        }
+
+        .contact-form .btn-primary {
+            background-color: #00B569;
+            color: white;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Footer styles */
+        .footer {
+            background-color: #00B569;
+            color: #fff;
+            padding: 20px 0;
+            margin-top: auto;
+        }
+
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Media queries for responsiveness */
+        @media (max-width: 768px) {
+            .contact-form {
+                padding: 20px;
+                max-width: 400px;
+            }
+
+            .contact-form h1 {
+                font-size: 36px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .contact-form h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Contact form container -->
+    <div class="contact-form">
+        <h1>Get in Touch!</h1>
+        <form>
+            <!-- Name input field -->
+            <div class="form-group">
+                <input type="text" class="form-control" name="name" placeholder="Name" required>
+            </div>
+            <!-- Email and Phone number input fields -->
+            <div class="form-row">
+              <div class="col-md-6">
+                <input type="email" class="form-control" name="email" placeholder="Email" required>
+            </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" name="number" placeholder="Phone Number">
+                </div>
+            </div>
+            <!-- Message textarea -->
+            <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" placeholder="Your Message..." required></textarea>
+            </div>
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer text-white text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p>
+                        Created By
+                        <a href="https://nexrof.in" class="text-white" target="_blank" rel="noopener noreferrer">HloMail</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
