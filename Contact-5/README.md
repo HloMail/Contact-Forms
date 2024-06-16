@@ -1,6 +1,6 @@
 # HloMail Contact Page
 
-![HloMail Contact Page](Contact-1.png)
+![HloMail Contact Page](Contact-5.png)
 
 This is the contact page for HloMail, providing a simple and elegant way for users to get in touch.
 
@@ -15,8 +15,8 @@ This is the contact page for HloMail, providing a simple and elegant way for use
 
 - HTML5
 - CSS3
-- Bootstrap 5.3.3
-- SVG icons
+- Bootstrap 5
+- Font Awesome 5.15.3 for icons
 
 ## Bootstrap Advantages
 
@@ -29,12 +29,13 @@ This is the contact page for HloMail, providing a simple and elegant way for use
 ## Page Structure
 
 1. **Header**: Attractive title with custom underline effect.
-2. **Contact Form**: 
+2. **Contact Form**:
    - Full Name input
    - Email input with icon
-   - Message textarea
+   - Phone Number input with icon
+   - Message textarea with icon
    - Submit button
-3. **Footer**: Credits and link to HloMail website.
+3. **Footer**: Created By HloMail
 
 ## How to Use
 
@@ -46,9 +47,9 @@ This is the contact page for HloMail, providing a simple and elegant way for use
 
 The page uses custom CSS for the underline effect and Bootstrap for overall styling. To customize:
 
-1. Modify the `.custom-underline` class in the `<style>` tag for heading effects.
+1. Modify the `.contact-form h2::after` selector in the `<style>` tag for the heading underline effect.
 2. Update Bootstrap classes in HTML elements for layout changes.
-3. Adjust the form action in `<form action="#!">` for form submission.
+3. Adjust the form action in `<form>` for form submission.
 
 ## Created By
 
