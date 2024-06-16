@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | HloMail</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Form Styles */
+        .form-group {
+            position: relative;
+            margin-bottom: 1.5rem;
+        }
+        .form-control {
+            border: none;
+            border-bottom: 1px solid #00FFB3;
+            background-color: transparent;
+            color: #00FFB3;
+            border-radius: 0;
+            padding: 0.5rem 0.75rem;
+            height: auto;
+        }
+        .form-control:focus {
+            border: 1px solid #00FFB3;
+            outline: none;
+            box-shadow: none;
+            background-color: transparent;
+        }
+        .form-control::placeholder {
+            color: transparent;
+        }
+        .floating-label {
+            position: absolute;
+            top: 0.5rem;
+            left: 0.75rem;
+            font-size: 1rem;
+            color: #00FFB3;
+            pointer-events: none;
+            transition: all 0.2s ease-in-out;
+            background: #000;
+            padding: 0 0.25rem;
+        }
+        .form-control:focus + .floating-label,
+        .form-control:not(:placeholder-shown) + .floating-label {
+            transform: translateY(-1.5rem) translateX(0.15rem);
+            font-size: 0.75rem;
+        }
+
+        /* Footer Styles */
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            color: #000;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 767px) {
+            .card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body style="background-color:#00FFB3; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0;">
+    <div class="card" style="background-color: #000; padding: 20px; border-radius: 10px; color: #00FFB3;">
+        <h3 class="display-5 text-center">Get In Touch!</h3>
+        <form>
+            <div class="form-row p-2">
+                <!-- First Name Input -->
+                <div class="form-group col-md-6">
+                    <input type="text" class="form-control text-white" id="firstName" placeholder=" " required>
+                    <label for="firstName" class="floating-label">First Name</label>
+                </div>
+                <!-- Last Name Input -->
+                <div class="form-group col-md-6">
+                    <input type="text" class="form-control text-white" id="lastName" placeholder=" " required>
+                    <label for="lastName" class="floating-label">Last Name</label>
+                </div>
+            </div>
+            <!-- Email Input -->
+            <div class="form-group col-md-12">
+                <input type="email" class="form-control text-white p-4" id="email" placeholder=" " required>
+                <label for="email" class="floating-label">Email</label>
+            </div>
+            <!-- Phone Input -->
+            <div class="form-group col-md-12">
+                <input type="text" class="form-control text-white" id="phone" placeholder=" " required>
+                <label for="phone" class="floating-label">Phone</label>
+            </div>
+            <!-- Message Textarea -->
+            <div class="form-group col-md-12">
+                <textarea class="form-control text-white p-2" id="message" placeholder=" " rows="3" required></textarea>
+                <label for="message" class="floating-label">Message</label>
+            </div>
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-block text-dark" style="background-color: #00FFB3; color: #0000;">Submit</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Created by HloMail</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
