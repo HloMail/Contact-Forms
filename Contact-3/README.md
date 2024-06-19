@@ -30,10 +30,11 @@ This is the contact page for HloMail, a web application that provides a simple a
 1. **Header**: An attractive title with a custom underline effect, immediately capturing the user's attention and setting the tone for the page.
 
 2. **Contact Form**:
-  - Full Name input: Allows users to provide their full name.
-  - Email input with icon: Enables users to enter their email address, with a subtle icon for visual enhancement.
-  - Message textarea: Provides a larger text area for users to write their message or inquiry.
-  - Submit button: A prominent button for users to submit their form after filling in the required fields.
+
+- Full Name input: Allows users to provide their full name.
+- Email input with icon: Enables users to enter their email address, with a subtle icon for visual enhancement.
+- Message textarea: Provides a larger text area for users to write their message or inquiry.
+- Submit button: A prominent button for users to submit their form after filling in the required fields.
 
 3. **Footer**: A simple footer with credits and a link to the HloMail website, acknowledging the creator of the page.
 
@@ -54,4 +55,4 @@ The contact page utilizes custom CSS for the underline effect on the headings an
 
 ## Created By
 
-This contact page was created by [HloMail](https://nexrof.in)
+This contact page was created by [HloMail](https://hlomail.in)

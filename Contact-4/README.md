@@ -59,4 +59,4 @@ To customize the form, you can modify the styles in the `<style>` section of the
 
 ## Credits
 
-This contact form was created by [HloMail](https://nexrof.in).
+This contact form was created by [HloMail](https://hlomail.in).
